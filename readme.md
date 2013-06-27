@@ -1,7 +1,6 @@
 # LabsLink for Europe PMC
 
-Version of files sended to [Europe PMC LabsLink](http://test.europepmc.org/LabsLink)
-
+Version of files sent to [Europe PMC LabsLink](http://test.europepmc.org/LabsLink)
 
 ## About
 
