@@ -1,0 +1,5 @@
+# fixes for labslink in Europe PMC
+set_field("providerID", "xxx");
+set_field("labsTitle", "Open Access at Bielefeld University");
+set_field("labsLink", "http://pub.uni-bielefeld.de/publication/");
+append("labsLink", "_id");
