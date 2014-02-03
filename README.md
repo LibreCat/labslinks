@@ -1,5 +1,4 @@
-labslinks
-=========
+# labslinks
 
 Provide your links to Europe PMC. 
 
@@ -9,3 +8,4 @@ Provide your links to Europe PMC.
 LabsLink is a mechanism for people to publish links from articles in Europe PMC to related information or tools. Simply put, you provide Europe PMC with the information they need to generate the links in a straightforward data description, and publish them on the Europe PMC website.
 
 For more information and registration see [LabsLink](http://europepmc.org/LabsLink)
+
