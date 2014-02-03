@@ -9,3 +9,6 @@ LabsLink is a mechanism for people to publish links from articles in Europe PMC 
 
 For more information and registration see [LabsLink](http://europepmc.org/LabsLink)
 
+## Example
+
+See the 'External Link' tab at http://europepmc.org/abstract/MED/10014726.

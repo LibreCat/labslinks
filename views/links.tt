@@ -1,4 +1,4 @@
-<link providerId="[% conf.providerID %]">
+<link providerId="[% conf.providerId %]">
   <resource>
   	<title>[% conf.title %]</title>
     <url>[% conf.frontdoor %]/[% id %]</url>
