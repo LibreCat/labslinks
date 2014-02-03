@@ -1,15 +1,18 @@
+providerId: xxxx
+title: 'Open Access at Bielefeld University'
+frontdoor: 'http://pub.uni-bielefeld.de/publication'
+
 importer:
   default:
     package: 'CSV'
+    options:
+      file: 'pmid.csv'
 
 exporter:
   default:
     package: 'Template'
     options:
-      template_before: 'views/before_links.tt'
+      template_before: 'views/links_before.tt'
       template: 'views/links.tt'
       template_after: 'views/links_after.tt'
-
-provider:
-  id: xxxxxx
-  name: 
+      file: 'pushLinks.xml'
