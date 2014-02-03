@@ -1,0 +1,15 @@
+importer:
+  default:
+    package: 'CSV'
+
+exporter:
+  default:
+    package: 'Template'
+    options:
+      template_before: 'views/before_links.tt'
+      template: 'views/links.tt'
+      template_after: 'views/links_after.tt'
+
+provider:
+  id: xxxxxx
+  name: 
