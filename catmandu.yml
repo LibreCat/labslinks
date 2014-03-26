@@ -16,3 +16,8 @@ exporter:
       template: 'views/links.tt'
       template_after: 'views/links_after.tt'
       file: 'pushLinks.xml'
+ftp:
+  host: 'labslink.ebi.ac.uk'
+  login: 'xxx'
+  pwd: 'xxx'
+  cwd: 'xxx'
