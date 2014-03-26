@@ -3,12 +3,16 @@
 use Catmandu::Sane;
 use Catmandu -load;
 use Catmandu::Importer::EuropePMC;
-use YAML;
+use Net::FTP;
+use Getopt::Std;
+
+getopts('t');
+our $opt_t;
 
 Catmandu->load;
 my $conf = Catmandu->config;
 
-my $importer = Catmandu->importer; #print Dump $importer->first;
+my $importer = Catmandu->importer;
 my $exporter = Catmandu->exporter;
 
 $importer->each(
@@ -38,3 +42,12 @@ $importer->each(
 );
 
 $exporter->commit;
+
+if ($opt_t) {
+    my $ftp = Net::FTP->new($conf->{ftp}->{host}) || die "Cannot connect: $@";
+    $ftp->login($conf->{ftp}->{login}) || die "Cannot login", $ftp->message;
+    $ftp->cwd($conf->{ftp}->{cwd}) || die "Cannot change directory", $ftp->message;
+    $ftp->put($conf->{exporter}->{default}->{options}->{file}) || die "Cannot put file to server", $ftp->message;;
+    $ftp->quit;
+    say "FTP upload successful.";
+}
