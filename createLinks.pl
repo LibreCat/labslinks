@@ -45,9 +45,19 @@ $exporter->commit;
 
 if ($opt_t) {
     my $ftp = Net::FTP->new($conf->{ftp}->{host}) || die "Cannot connect: $@";
-    $ftp->login($conf->{ftp}->{login}) || die "Cannot login", $ftp->message;
+    $ftp->login($conf->{ftp}->{login}, $conf->{ftp}->{pwd}) || die "Cannot login", $ftp->message;
     $ftp->cwd($conf->{ftp}->{cwd}) || die "Cannot change directory", $ftp->message;
     $ftp->put($conf->{exporter}->{default}->{options}->{file}) || die "Cannot put file to server", $ftp->message;;
     $ftp->quit;
     say "FTP upload successful.";
 }
+
+=head1 USAGE
+    
+    # creates file 'pushLinks.xml'
+    $ perl createLinks.pl
+
+    # additionally transfers the file 'pushLinks.xml' to the ftp server
+    $ perl createLinks.pl -t
+
+=cut
