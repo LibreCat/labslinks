@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<providers>
-  <provider>
-    <id>xxxx</id>
-    <resourceName>Open Access at Bielefeld University</resourceName>
-    <description>Get additional Open Access full texts that are not available in Europe PMC</description>
-    <email>publikationsdienste.ub@uni-bielefeld.de</email>
-  </provider>
-</providers>
