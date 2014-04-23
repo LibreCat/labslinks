@@ -1,0 +1,8 @@
+<providers>
+  <provider>
+    <id>[% conf.providerId %]</id>
+    <resourceName>[% conf.title %]</resourceName>
+    <description>[% conf.description %]</description>
+    <email>[% conf.email %]</email>
+  </provider>
+</providers>
