@@ -15,6 +15,11 @@ my $conf = Catmandu->config;
 my $importer = Catmandu->importer;
 my $exporter = Catmandu->exporter;
 
+#generate provider.xml
+my $provider = Catmandu->exporter('provider');
+$provider->add({conf => $conf});
+$provider->commit;
+
 $importer->each(
     sub {
         my $rec = $_[0];
